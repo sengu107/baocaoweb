@@ -1,0 +1,116 @@
+body{
+    width:90%;
+    margin:auto;
+    text-align:center;
+    font-size:20px;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:90%;
+    margin:0 auto;
+    padding:20px;
+}
+
+.nav-brand a,
+.nav-links{
+    font-family:'Montserrat',sans-serif;
+}
+
+.nav-brand a{
+    color:#2f2828;
+    font-size:30px;
+    font-weight:700;
+    text-decoration:none;
+}
+
+.nav-links{
+    display:flex;
+    gap:50px;
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.nav-links a{
+    color:#2f2828;
+    font-size:20px;
+    text-decoration:none;
+}
+
+a:hover{
+    color:#c91f1f;
+}
+
+#login{
+    margin-top:100px;
+    zoom:.6;
+    font:700 30px 'Montserrat',sans-serif;
+}
+
+#page-name{
+    margin-bottom:50px;
+    font: 700 italic 50px 'Montserrat',sans-serif;
+    color:#CE2626;
+}
+#login-form,
+#btn-login,
+#signup{
+    margin-top:50px;
+}
+
+#signup a{
+    color:#CE2626;
+    text-decoration:none;
+}
+
+#email,
+#pwrd,
+#username,
+#phonenumber,
+#address,
+#rpwrd{
+    margin-top:20px;
+    border:none;
+    border-bottom:1px solid #ccc;
+    color:#CE2626;
+}
+
+#btn-login{
+    width:50%;
+    max-width:200px;
+    padding:10px 20px;
+    border:none;
+    border-radius:20px;
+    background:#CE2626;
+    color:#fff;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#btn-login:hover{
+    background:#909090;
+    transform:translateY(-1px);
+}
+
+@media (max-width:768px){
+    .navbar{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .nav-links{
+        gap:20px;
+        flex-wrap:wrap;
+        justify-content:center;
+        zoom:.83;
+    }
+
+    main{
+        margin-top:50px;
+        zoom:.8;
+    }
+}

@@ -1,0 +1,195 @@
+body{
+    width: 90%;
+    margin: auto;
+    font-size: 20px;
+    font-family:'Montserrat',sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+.navbar a{
+    color: #2f2828;
+    text-decoration:none;
+}
+.nav-links{
+    display:flex;
+    gap:50px;
+    margin:0;
+    padding:0;
+    list-style:none;
+    font-family:'Montserrat',sans-serif;
+}
+.nav-links a{
+    color:#2f2828;
+    text-decoration: none;
+    font-size: 20px;
+}
+a:hover{
+    color:#c91f1f;
+}
+.merch-container{
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+    align-items: flex-start;
+}
+.filter-sidebar{
+    width: 20%;
+    border-right: 2px solid #eee;
+    padding-right: 15px;
+}
+.filter-sidebar h4{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.btn-filter{
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 12px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.btn-filter:hover,
+.btn-filter-active{
+    background-color: #CE2626;
+    color: white;
+}
+.table-layout{
+    width: 80%;
+}
+.merch-table{
+    width:100%;
+    border-collapse: separate;
+    border-spacing: 20px;
+    table-layout: fixed;
+}
+.product-cell{
+    width:33.33%;
+    vertical-align: top;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+}
+.product-card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+.merch-name{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.price{
+    color: #CE2626;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom:12px;
+}
+.btn-add-cart{
+    background-color:rgb(47, 40, 40) ;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+}
+.btn-add-cart:hover{
+    background-color: #CE2626;
+}
+.footer{
+    color:#312525;
+    background:#fff;
+}
+
+.footer-table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.footer-col{
+    width:33%;
+    padding:20px;
+    text-align:left;
+    vertical-align:top;
+}
+
+.footer-brand{
+    font-size:30px;
+    font-weight:700;
+}
+
+.footer-desc{
+    margin-top:10px;
+    font-size:15px;
+}
+
+#social{
+    margin:16px 0 0 5px;
+    font-size:20px;
+    text-align:left;
+}
+
+.footer a{
+    color:inherit;
+    text-decoration:none;
+}
+
+.footer-heading{
+    margin-bottom:12px;
+    font-size:18px;
+    font-weight:700;
+}
+
+.footer-list{
+    margin:0;
+    padding:0;
+    list-style:none;
+    font-size:14px;
+    line-height:2;
+}
+
+.footer-bottom{
+    padding:16px;
+    text-align:center;
+    font-size:13px;
+    color:#666;
+    border-top:1px solid #2a2a2a;
+}
+
+@media (max-width:768px){
+    .merch-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .filter-sidebar{
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid #eee;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    .table-layout{
+        width: 100%;
+    }
+    .product-cell{
+        padding: 10px;
+    }
+    .product-card img{
+        height: 180px;
+    }
+}

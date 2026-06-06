@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles/merchandise.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/main.css">
+        <title>Amblunk - Merchandise</title>
+    </head>
+    <body>
+        <header class="navbar">
+            <div class="nav-brand"><a href="index.html">AmBlunk</a></div>
+            <ul class="nav-links">
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="Merchandise.html" class="active">Merchandise</a></li>
+                <li><a href="cart.html">Cart 🛒</a></li>
+                <li><a href="my-account.html">Account</a></li>
+            </ul>
+        </header>
+        <main class="merch-container">
+            <aside class="filter-sidebar">
+                <h4>Filter by Genre</h4>
+                <button class="btn-filter btn-filter-active" onclick="filterGenre('All', this)">All</button>
+                <button class="btn-filter" onclick="filterGenre('CD', this )">CD</button>
+                <button class="btn-filter" onclick="filterGenre('Clothing', this)">Clothing</button>
+                <button class="btn-filter" onclick="filterGenre('Accessories', this)">Accessories</button>
+            </aside>
+            <div class="table-layout">
+                <table class="merch-table">
+                    <tr>
+                        <td class="product-cell" data="CD">
+                            <div class="product-card">
+                                <img src="assets/merch/cd1.jpg" alt="Merch">
+                                <h5 class="merch-name">Golden CD</h5>
+                                <p class="artist">Jung Kook</p>
+                                <p class="price">800.000đ</p>
+                                <button class="btn-add-cart">Add to cart</button>
+                            </div>
+                        </td>
+
+                        <td class="product-cell" data="Accessories">
+                            <div class="product-card">
+                                <img src="assets/merch/mockhoa1.jpg" alt="Merch">
+                                <h5 class="merch-name">Mini CD "The Weekend" </h5>
+                                <p class="artist">The Weekend</p>
+                                <p class="price">150.000đ</p>
+                                <button class="btn-add-cart">Add to cart</button>
+                            </div>
+                        </td>
+
+                        <td class="product-cell" data="Clothing">
+                            <div class="product-card">
+                                <img src="assets/merch/clothing1.jpg" alt="Merch">
+                                <h5 class="merch-name">BigBang T-shirt</h5>
+                                <p class="artist">BigBang</p>
+                                <p class="price">350.000đ</p>
+                                <button class="btn-add-cart">Add to cart</button>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="product-cell" data="CD">
+                            <div class="product-card">
+                                <img src="assets/merch/cd2.jpg" alt="Merch">
+                                <h5 class="merch-name">Ubermensch [CD]</h5>
+                                <p class="artist">G-Dragon</p>
+                                <p class="price">900.000đ</p>
+                                <button class="btn-add-cart">Add to cart</button>
+                            </div>
+                        </td>
+
+                        <td class="product-cell" data="Accessories">
+                            <div class="product-card">
+                                <img src="assets/merch/lightstick1.jpg" alt="Merch">
+                                <h5 class="merch-name">Lightstick </h5>
+                                <p class="artist">BlackPink</p>
+                                <p class="price">250.000đ</p>
+                                <button class="btn-add-cart">Add to cart</button>
+                            </div>
+                        </td>
+
+                        <td class="product-cell" data="Accessories">
+                            <div class="product-card">
+                                <img src="assets/merch/lightstick2.jpg" alt="Merch">
+                                <h5 class="merch-name">Lightstick</h5>
+                                <p class="artist">G-Dragon</p>
+                                <p class="price">270.000đ</p>
+                                <button class="btn-add-cart">Add to cart</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="product-cell" data="Accessories">
+                            <div class="product-card">
+                                <img src="assets/merch/lightstick3.jpg" alt="Merch">
+                                <h5 class="merch-name">Lightstick</h5>
+                                <p class="artist">BigBang</p>
+                                <p class="price">290.000đ</p>
+                                <button class="btn-add-cart">Add to cart</button>
+                            </div>
+                        </td>
+
+                        <td class="product-cell" data="CD">
+                            <div class="product-card">
+                                <img src="assets/merch/cd3.jpg" alt="Merch">
+                                <h5 class="merch-name">Dangerous Women </h5>
+                                <p class="artist">Ariana Grande</p>
+                                <p class="price">750.000đ</p>
+                                <button class="btn-add-cart">Add to cart</button>
+                            </div>
+                        </td>
+
+                        <td class="product-cell" data="Clothing">
+                            <div class="product-card">
+                                <img src="assets/merch/clothing2.jpg" alt="Merch">
+                                <h5 class="merch-name">T-shirt</h5>
+                                <p class="artist">The Weekend</p>
+                                <p class="price">350.000đ</p>
+                                <button class="btn-add-cart">Add to cart</button>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                </table>
+            </div>
+        </main>
+        <footer class="footer">
+            <table class="footer-table">
+                <tr>
+                    <td class="footer-col">
+                        <div class="footer-brand">Amblunk</div>
+                        <div class="footer-desc">
+                        <i>Where every album tells a piece of your story.
+                            <br>Discover music from all around the world.</i>
+                        </div>
+
+                        <div id="social">
+                        <span class="social">Follow Us<br></span>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </td>
+
+                    <td class="footer-col">
+                        <div class="footer-heading">Explore</div>
+                        <ul class="footer-list">
+                            <li><a href="#">New Albums</a></li>
+                            <li><a href="#">Artists</a></li>
+                            <li><a href="#">Genres</a></li>
+                            <li><a href="#">Weekly Charts</a></li>
+                        </ul>
+                    </td>
+
+                    <td class="footer-col">
+                        <div class="footer-heading">Merchandise</div>
+                        <ul class="footer-list">
+                            <li><a href="#">Vinyl & CDs</a></li>
+                            <li><a href="#">Clothing & Accessories</a></li>
+                            <li><a href="#">My Orders</a></li>
+                            <li><a href="#">Returns & Exchanges</a></li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="3" class="footer-bottom">
+                        © 2026 AmBlunk. All rights reserved.
+                    </td>
+                </tr>
+            </table>
+        </footer>
+    </body>
+    <script language="javascript" src="js/merchandise.js"></script>
+</html>

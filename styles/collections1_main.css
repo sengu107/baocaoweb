@@ -1,0 +1,145 @@
+body{
+    width:100%;
+    margin: auto;
+    font-size:20px;
+    overflow-x: hidden;
+    font-family:'Montserrat', sans-serif;
+}
+.navbar {
+  display: flex;
+  width: 81%;
+  margin: 0 auto;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.nav-brand a{
+  text-decoration:none;
+  color: rgb(47, 40, 40);;
+  font-size: 30px;
+  font-weight:bolder;
+}
+.nav-links {
+  list-style: none;
+  display: flex;   
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+}
+.nav-links a {
+  color: rgb(47, 40, 40);
+  text-decoration: none;
+  font-size:20px
+}
+.nav-links a:hover{
+  color:rgb(201, 31, 31);
+}
+/*store*/
+main{
+  background-color: #eee9e19c;
+}
+.stor{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  padding: 30px 20px;
+}
+.trai{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.trai img{
+  width: 100px;
+  cursor: pointer;
+}
+.giua img{
+  width: 100%;
+  height: 500px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.anh-con.active{
+  border: 1px solid blue;
+}
+.phai h2{
+  max-width: 450px;
+}
+.phai p{
+  font-weight: bolder;
+  font-size: 30px;
+}
+.phai button{
+  cursor: pointer;
+  border: 0.5px solid black;
+  background-color: #eee9e19c;
+  font-size: 20px;
+  padding: 16px 40px;
+  display: block;
+}
+.phai button:hover{
+  background-color: black;
+  color: white;
+}
+/*footer*/
+.footer{
+  width: 90%;
+  margin-left:auto;
+  color:#312525;
+  background-color:rgb(255, 255, 255);
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.social{
+  margin-left:5px;
+}
+.footer a{
+  color:black;
+}
+@media (max-width:768px){
+  .nav-links {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    zoom:83%;
+  }
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .stor{
+    display: grid;
+    grid-template-areas: "giua" "trai" "phai";
+    gap: 20px;
+  }
+  .giua{
+    grid-area: giua;
+    display: flex;
+    justify-content: center;
+  }
+  .trai{
+    grid-area: trai;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .phai{
+    grid-area: phai;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .giua img{
+    width: 80%;
+  }
+  .phai h2{
+    max-width: 80%;
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+  .phai p{
+    font-weight: bolder;
+    font-size: 25px;
+  }
+}
