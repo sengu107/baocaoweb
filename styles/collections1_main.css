@@ -56,10 +56,9 @@ main{
   cursor: pointer;
 }
 .giua img{
-  width: 100%;
+  width: 90%;
   height: 500px;
   border-radius: 8px;
-  object-fit: cover;
 }
 .anh-con.active{
   border: 1px solid blue;
@@ -77,7 +76,6 @@ main{
   background-color: #eee9e19c;
   font-size: 20px;
   padding: 16px 40px;
-  display: block;
 }
 .phai button:hover{
   background-color: black;
