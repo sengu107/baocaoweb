@@ -5,39 +5,34 @@ body{
     overflow-x: hidden;
     font-family:'Montserrat', sans-serif;
 }
-.navbar {
-  display: flex;
-  width: 81%;
-  margin: 0 auto;
-  padding: 20px;
-  justify-content: space-between;
-  align-items: center;
-
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:81%;
+    margin:auto;
+    padding:20px;
 }
 .nav-brand a{
-  text-decoration:none;
-  color: rgb(47, 40, 40);;
-  font-size: 30px;
-  font-weight:bolder;
+    color:#2f2828;
+    font-size:30px;
+    font-weight:700;
+    text-decoration:none;
 }
-.nav-links {
-  list-style: none;
-  display: flex;   
-  gap: 50px;
-  margin: 0;
-  padding: 0;
+.nav-links{
+    display:flex;
+    gap:50px;
+    margin:0;
+    padding:0;
+    list-style:none;
 }
-.nav-links a {
-  color: rgb(47, 40, 40);
-  text-decoration: none;
-  font-size:20px
+.nav-links a{
+    color:#2f2828;
+    text-decoration:none;
+    font-size:20px;
 }
-.nav-links a:hover{
-  color:rgb(201, 31, 31);
-}
-#ex {
-  text-decoration: underline;
-  text-decoration-color: rgb(201, 31, 31);
+a:hover{
+    color:#c91f1f;
 }
 /* Banner */
 .banner{
