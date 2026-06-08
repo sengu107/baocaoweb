@@ -106,6 +106,13 @@ th,td{
     display:flex;
     gap:40px;
 }
+.delete-btn{
+    padding:5px 10px;
+    background:#CE2626;
+    color:#fff;
+    border:none;
+    font-size:16px;
+}
 
 @media (max-width:768px){
     .navbar{
