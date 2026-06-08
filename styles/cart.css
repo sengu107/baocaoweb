@@ -61,9 +61,10 @@ table{
 
 .album{
     display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:20px;
+    align-items:center;
+    justify-content:flex-start;
+    flex-wrap:nowrap;
+    gap:16px;
     margin-top:40px;
 }
 
