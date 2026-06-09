@@ -5,13 +5,10 @@ body{
 }
 .navbar{
     display:flex;
-    justify-content:space-between;
-    align-items:center;
     width:90%;
     margin:auto;
     padding:20px;
 }
-
 .nav-brand a,
 .nav-links{
     font-family:'Montserrat',sans-serif;
@@ -45,7 +42,6 @@ a:hover{
 main{
     display:flex;
     justify-content:center;
-    align-items:center;
     margin-top:40px;
 }
 
@@ -118,11 +114,6 @@ th,td{
     cursor:pointer;
 }
 
-.purchase a{
-    color:#fff;
-    text-decoration:none;
-}
-
 #payment{
     margin:20px 0 0 500px;
     text-align:left;
@@ -178,7 +169,4 @@ th,td{
         gap:12px;
     }
 
-    .purchase{
-        width:auto;
-    }
 }

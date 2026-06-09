@@ -11,24 +11,21 @@ body{
 }
 
 .navbar{
+    display:flex;
     width:90%;
-    margin:0 auto;
+    margin:auto;
     padding:20px;
-    justify-content:space-between;
 }
-
 .nav-brand a,
 .nav-links{
     font-family:'Montserrat',sans-serif;
 }
-
 .nav-brand a{
     text-decoration:none;
     color:rgb(47,40,40);
     font-size:30px;
     font-weight:bolder;
 }
-
 .nav-links{
     display:flex;
     gap:50px;

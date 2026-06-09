@@ -5,12 +5,10 @@ body{
     font-family:'Montserrat',sans-serif;
 }
 .navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    margin: auto;
-    padding: 20px;
+    display:flex;
+    width:90%;
+    margin:auto;
+    padding:20px;
 }
 .navbar a{
     color: #2f2828;

@@ -4,15 +4,15 @@ function hieuung(id,text,delay,done){
   var i = 0;
   var chu = document.getElementById(id);
   function gochu(){
-    if(i<text.length){
+  if(i<text.length){
       chu.textContent += text[i];
       i++;
       setTimeout(gochu,delay);
   }
-  else{if(done)done();}
+    else{if(done)done();}
   }
   gochu();
 }
 hieuung("title", title, 100, function(){
-    hieuung("subtitle", subtitle, 50);
+    hieuung("subtitle", subtitle, 100);
 });
