@@ -9,7 +9,7 @@ document.getElementById("btn-login").onclick = function () {
     var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     var phonePattern = /^0\d{9}$/;
     if (
-        (emailPattern.test(email) || phonePattern.test(phonenumber)) && 
+        (emailPattern.test(email) && phonePattern.test(phonenumber)) && 
         usernamepattern.test(username) &&
         address.length > 0 &&
         password.length >= 6 &&
