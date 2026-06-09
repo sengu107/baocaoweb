@@ -86,6 +86,9 @@ main{
   background-color: black;
   color: white;
 }
+.phai a:hover{
+  color: white;
+}
 /*footer*/
 .footer{
     color:#312525;
