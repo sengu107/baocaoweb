@@ -5,14 +5,11 @@ body{
     overflow-x: hidden;
     font-family:'Montserrat', sans-serif;
 }
-.navbar {
-  display: flex;
-  width: 81%;
-  margin: 0 auto;
-  padding: 20px;
-  justify-content: space-between;
-  align-items: center;
-
+.navbar{
+    display:flex;
+    width:90%;
+    margin:auto;
+    padding:20px;
 }
 .nav-brand a{
   text-decoration:none;
