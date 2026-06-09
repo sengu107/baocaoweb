@@ -7,7 +7,9 @@ body{
 }
 .navbar{
     display:flex;
-    width:90%;
+    justify-content:space-between;
+    align-items:center;
+    width:81%;
     margin:auto;
     padding:20px;
 }
@@ -256,11 +258,10 @@ a:hover{
   .box{
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 100px;
   }
   .box-con{
     box-shadow:0 20px 20px rgba(0,0,0,0.5);
     border: 1px solid #ddd;
-    border-radius: 8px;
+    margin: 40px 40px ;
   }
 }
